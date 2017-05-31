@@ -1,5 +1,5 @@
 (function() {
-    function HomeCtrl(Room) {
+    function HomeCtrl(Room, ModalCtrl) {
         var home = this;
         home.rooms = Room.all;
     }
