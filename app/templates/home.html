@@ -1,5 +1,16 @@
-<h1>Home Page</h1>
-<div ng-controller='ModalCtrl as modals'>
-    <button type="button" class="btn btn-default" ng-click="modals.open()">New room</button>
+<div class="room-navigation">
+    <h1 class="title">Bloc Chat</h1>
+    <div class="new-room-button">
+        <div ng-controller='ModalCtrl as modals'>
+            <button type="button" class="btn btn-default" ng-click="modals.open()">New room</button>
+        </div>
+    </div>
+    <div class="rooms" ng-repeat="room in home.rooms" ng-click="home.selectRoom(room)">{{room.$value}}</div>
 </div>
-<div class="rooms" ng-repeat="room in home.rooms">{{room.$value}}</div>
+
+<div class="chat-room-space">
+    <h2 class="chat-room-name"> {{ currentRoom.name }} </h2>
+    <ul>
+        <li class="messages" ng-repeat="message in messages"> {{ message.Name }} : {{ message.content }}</li>
+    </ul>
+</div>

@@ -1,0 +1,31 @@
+html {
+    height: 100%;
+    background-color: #ffffff;
+    font-family: "Helvetica", sans-serif;
+}
+
+.title {
+    background-color: #ffffff;
+    padding-left: 3rem;
+    position: relative;
+}
+
+.rooms {
+    background-color: #ffffff;
+    padding-left: 2rem;
+    padding-top: .5rem;
+}
+
+.new-room-button {
+    background-color: #ffffff;
+    padding-left: 2rem;
+}
+
+.chat-room-name {
+    background-color: #ffffff;
+}
+
+.room-navigation,
+.rooms {
+    max-width: 250px
+}
