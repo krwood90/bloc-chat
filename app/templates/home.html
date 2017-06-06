@@ -11,7 +11,15 @@
 
 <div class="chat-room-space">
     <h2 class="chat-room-name"> {{ currentRoom.name }} </h2>
-    <ul>
-        <li class="messages" ng-repeat="message in messages"> {{ message.Name }} : {{ message.content }}</li>
-    </ul>
+    <div>
+        <div class="messages" ng-repeat="message in messages">
+            <div class="user-name-title">{{ message.username }}</div>
+            <div class="message">{{ message.content }}</div>
+            <div class="time-stamp">{{ message.sentAt | date : "shortTime" }}</div>
+        </div>
+    </div>
+    <form ng-submit="home.send(home.message, currentRoom)">
+        <input ng-model="home.message" class="input-bar" type="text" placeholder="Type a message here">
+        <button class="send-button">Send</button>
+    </form>
 </div>

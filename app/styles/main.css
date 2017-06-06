@@ -25,9 +25,13 @@ html {
     background-color: #ffffff;
 }
 
-.room-navigation,
-.rooms {
+.room-navigation {
+    padding-inline-start: 25%;
     max-width: 250px
+}
+
+.chat-room-space {
+    padding-inline-end: 75%;
 }
 
 .user-name-label {
