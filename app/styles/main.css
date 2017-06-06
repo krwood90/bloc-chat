@@ -29,3 +29,8 @@ html {
 .rooms {
     max-width: 250px
 }
+
+.user-name-label {
+    background: #ffffff;
+    padding-left: 2rem;
+}

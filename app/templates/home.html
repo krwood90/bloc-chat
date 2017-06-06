@@ -5,6 +5,7 @@
             <button type="button" class="btn btn-default" ng-click="modals.open()">New room</button>
         </div>
     </div>
+    <div class="user-name-label">Username: {{ home.username}} </div>
     <div class="rooms" ng-repeat="room in home.rooms" ng-click="home.selectRoom(room)">{{room.$value}}</div>
 </div>
 
